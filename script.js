@@ -6,6 +6,8 @@ document.querySelectorAll(".js-contact-btn").forEach(function(btn){
     if (typeof fbq === "function") {
       fbq("track", "Lead", {
         content_name: "Telegram Contact",
+        content_category: "Contact",
+        destination: tgLink,
         source: "ADSMAX Landing Page"
       });
     }
